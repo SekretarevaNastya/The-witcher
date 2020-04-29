@@ -1,0 +1,457 @@
+html,body{
+	width:auto;
+	min-height:100%;
+	/*position:absolute;
+	margin: 0px;
+	overflow-x: hidden;*/
+	background: url(../img/inkt.png) no-repeat scroll center center / 100% 100% transparent;
+}
+
+img {width:100%;}
+
+@font-face {
+font-family: "Crimson Text"; 
+src: url("../fonts/Crimson Text.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+
+section {
+	overflow-x: hidden;
+width: 100%;
+height: 100%;
+position: absolute;
+display: block;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 6.95%, rgba(0, 0, 0, 0.3) 100%, rgba(0, 0, 0, 0) 100%);
+text-align: center;
+}
+
+.logo img {
+	width: 380px;
+	height: 345px;
+	position: relative;
+    display: block;
+    margin: 0px auto;
+	margin-top: 103px;
+}
+
+.Frame {
+	top: 98px;
+	position: relative;
+	display: block;
+    margin: 0px auto;
+	width: 880px;
+	height: auto;
+	text-align: center;
+}
+
+.Group-hero {
+	vertical-align:top;
+	position: relative;
+	display: inline-block;
+	width: 280px;
+	height: 352px;
+	margin-bottom:103px;
+}
+
+.Group-hero a {
+	text-decoration: none;
+}
+
+.Group-hero .hero:nth-child(2n) {margin: 0px 102px}
+
+.Group-hero img {
+	width: 188px;
+	height: 188px;
+   border-radius: 100px; 
+    border: 1.7px solid #ffd28d; 
+    box-shadow: 0 0 7px #352000;
+	margin-bottom:22px;
+}
+
+.hero {
+	position: relative;
+}
+
+.Group-hero .hero img {
+	width: 166px;
+	height: 166px;
+   border-radius: 100px; 
+    border: 1.7px solid #ffd28d; 
+    box-shadow: 0 0 7px #352000;
+	margin-bottom:22px;
+	
+}
+
+.Group-hero h2{
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-size: 32px;
+   font-style: normal;
+   font-weight: normal;
+   margin:2px 0 0 0;
+}
+
+/*---------------------- стиль #Group-hero для внутренней страницы ----------------------*/
+
+.Group-hero .hero p{
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-size: 17px;
+	line-height: 148.6%;
+   font-style: normal;
+   font-weight: normal;
+   margin:0px;
+   padding: 10px;
+}
+
+.Group-hero .icon {
+	position: absolute;
+	border: none;
+	top: 117px;
+    left: 42px;
+}
+
+.Group-hero .icon img{
+	border: none;
+	box-shadow: none;
+	width: 68px;
+	height: 73px;
+}
+
+.Group-hero .icon span {
+	position: absolute;
+	left: 48%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-style: normal;
+font-weight: bold;
+font-size: 27px;
+line-height: 55px;
+	
+}
+
+/*--------------внутренняя страница--------------*/
+
+#heder {
+	width: 80%;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+.Back {
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-size: 26px;
+	line-height: 148.6%;
+   text-decoration: underline;
+   float: left;
+ margin-top: 88px;
+}
+
+.logo1 {
+	width: 88px;
+	height: 79px;
+	float: right;
+	margin-top: 66px;
+
+}
+
+#logo1 img {
+	width: 88px;
+	height: 79px;
+}
+
+/* Собственно сам слайдер */
+.slider{
+    width: 572px;
+    position: relative;
+	top: 78px;
+    height: 530px;
+    margin-bottom: 130px;
+    margin: auto;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+
+.slider .item { width: 100%; position: absolute;}
+
+.slider .item img {
+    object-fit: cover;
+     width: 359px;
+    height: 359px;
+	margin: 0 auto;
+	position: relative;
+    display: block;
+	border-radius: 50%; 
+    border: 1.7px solid #ffd28d; 
+    box-shadow: 0 0 7px #352000;
+}
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 33%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+	text-align:none;
+}
+
+.slider .prev {
+	left: 0;
+}
+
+
+.slider .next {
+    right: 0;
+   
+}
+
+
+/* Заголовок слайда */
+.slideText h1{
+   
+    background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-style: normal;
+   font-weight: normal;
+   font-size: 61px;
+line-height: 128.6%;
+padding: 10px;
+text-align:center;
+   margin:0px;
+}
+
+
+/* Анимация слайдов */
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.line {
+	position: relative;
+	top:35px;
+}
+
+.line img {
+	width: 13px;
+height: 130px;
+margin: 50px 0;
+}
+
+/*-------------------- адаптирование -------------------*/
+
+@media (max-width: 1024px) {
+	
+#Frame {
+   width: 100%;
+}
+	
+#Group-hero .hero:nth-child(2n) {margin: 0px 75px}
+}
+
+@media (max-width: 768px) {
+	
+		#Frame {
+    width: 100%;
+}
+
+	#logo img {
+	width: 60%;
+	height: 60%;
+}
+
+#avatar img {
+	width: 60%;
+	height: 60%;
+}
+
+#Group-hero {
+	width: 33.3%;
+	height: auto;
+	float: left;
+	vertical-align:top;
+	position: relative;
+	display: inline-block;
+	margin-bottom:103px;
+}
+
+#Group-hero .hero img {
+	width: 80%;
+	height: 75%;
+}
+
+#Group-hero .hero:nth-child(2n) {margin: 0}
+
+#Group-hero .hero h2 {
+	font-size: 170%;
+}
+
+#Group-hero .icon {
+        top: 40%;
+    left: 5%;
+}
+
+.slider {
+    width: 80%;
+}
+
+.slider .item img {
+	width: 60%;
+    height: 60%;
+}
+
+}
+
+@media (max-width: 320px) {
+	
+	#Frame {
+    width: 100%;
+}
+
+#Group-hero {
+	width: 133px;
+	height: auto;
+	margin: 0 10px 18px 10px;
+	float: none;
+}
+
+#Group-hero .hero img {
+	width: 120px;
+	height: 120px;
+	margin-bottom:0px;
+}
+
+#Group-hero .hero:nth-child(2n) {margin: 0 10px 18px 10px;}
+
+#Group-hero .icon {
+	top: 82px;
+    left: 0px;
+
+}
+
+#Group-hero .icon img {
+	width: 47px;
+    height: 49px;
+}
+
+#Group-hero .icon span {
+	font-size: 14px;
+	top: 33%;
+}
+
+#Group-hero:nth-child(2n) {
+	margin: 0;
+
+}
+
+#Group-hero .hero h2 {
+	font-size: 19px;
+	margin: 18px 0 0 0;
+}
+
+#Group-hero .hero p {
+	    font-size: 13px;
+}
+
+.Back {
+margin-top: 36px;
+    font-size: 17px;
+}
+
+.logo1 { 
+margin-top: 29px;
+width: 40px;
+    height: 36px;
+}
+
+.slider .prev  img{
+    width: 80%;
+    height: 80%;
+}
+
+.slider .next img{
+    width: 80%;
+    height: 80%;
+}
+
+.slider .prev, .slider .next {
+    top: 28%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.slideText h1 { 
+font-size: 41px;
+}
+
+.slider {
+    width: 262px;
+}
+
+.slider{
+      height: 250px;
+}
+
+.line img {
+   width: 8px;
+    height: 64px;
+	    margin: 0px 0;
+}
+
+.line {
+    position: relative;
+    top: 70px;
+}
+}
+
