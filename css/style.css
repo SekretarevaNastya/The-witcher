@@ -248,12 +248,18 @@ height: 71px;
 }
 
 .Group-hero .hero.is-active { 
-display: block; 
-width: 280px;
+text-align: center;
+display: block;
+	
+} 
+
+.Group-hero .hero.is-active  .image {
+	width: 280px;
 	height: 352px;	
 	display:inline-block;
-	vertical-align:top;
-} 
+}
+
+
 
 
 .Group-hero .avatar{
