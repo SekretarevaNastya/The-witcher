@@ -1,0 +1,345 @@
+html,body{
+	min-width:1440px;
+	height:auto;
+	margin: 0px;
+	background: #080809 url(../img/bg.jpg) no-repeat center center / 100% 100% fixed;
+	font-family: 'Crimson Text', serif; 
+}
+
+header {
+	height: auto;
+	width:1190px;
+	margin: 0 auto;
+}
+
+/* кнопка шаг назад*/
+
+.Back {
+	display: none;
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-size: 26px;
+	line-height: 148.6%;
+   text-decoration: underline;
+   float: left;
+ margin-top: 88px;
+ border-bottom: 1px solid rgba(219, 174, 100, 0.3);
+}
+
+.Back :hover{
+	border-bottom: 1px solid #DBAE64;
+}
+
+.logo1 {
+	display: none;
+	width: 88px;
+	height: 79px;
+	float: right;
+	margin-top: 66px;
+
+}
+
+.logo1 img {
+	width: 88px;
+	height: 79px;
+}
+
+
+.logo {
+	display:none;
+	width: 380px;
+	height: 345px;
+	margin: 0 auto;
+	padding-top:102px;
+}
+
+/*слайдер */
+.slider{
+	/*display: none;*/
+    width: 572px;
+    position: relative;
+    height: auto;
+    margin-bottom: 130px;
+    margin: 0px auto;
+	padding-top: 68px;
+}
+
+.slider .hero-slider {
+	width: 435px;
+    height: auto;
+	margin: 0 auto;
+}
+
+.image  img{
+	border-radius: 50%; 
+    border: 1.7px solid #ffd28d; 
+    box-shadow: 0 0 7px #352000;
+}
+.slider .avatar{
+	width: 359px;
+	height: 359px;
+	position: relative;
+	margin: 0 auto;
+	top:28px;
+}
+
+.slider .image  img {
+	 width: 359px;
+    height: 359px;
+	object-fit: cover;
+	position: relative;
+    display: block;
+	margin: 0 auto;
+}
+
+
+.slider .parent {
+display:none;
+position: absolute;
+bottom: 18px;
+left: 13px;
+margin: 0px;
+width: 68px;
+height: 71px;
+}
+
+.slider .parent p{
+	position: absolute;
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-weight: normal;
+   font-size:29px;
+    top: 8%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Заголовок слайда */
+
+.slideText  {
+	position: relative;
+	margin-top: 53px;
+	margin-bottom: 21px;
+}
+
+.slideText h1{
+    background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-weight: normal;
+   font-size: 61px;
+	text-align:center;
+   margin:0px;
+   padding: 0 10px;
+}
+
+.slider .post p {
+	display:none;
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-weight: normal;
+   font-size:17px;
+   text-align: center;
+   margin:0px;
+}
+
+
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 49%;
+    width: auto;
+    margin-top: -22px;
+    padding: 19px;
+    background: url("../img/Ellipse.png") no-repeat center center;
+  }
+  
+ .slider .prev  > img, .slider .next  > img {
+	 position:relative;
+	 top:2px;
+ }
+
+.slider .prev:hover, .slider .next:hover {
+	background: url("../img/EllipseHover.png") no-repeat center center;
+}
+
+.slider .prev {
+	left: 0;
+}
+
+
+.slider .next {
+    right: 0;
+   
+}
+
+
+/* Анимация слайдов */
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* основное содержимое */
+
+.main {
+	width:1320px;
+	margin: 0 auto;
+}
+/* иния */
+
+.line {
+	display:none;
+	text-align: center;
+	margin-top: 60px;
+}
+
+.line img {
+	width: 13px;
+	height: 130px;
+}
+
+/* подчиненные */
+
+.Group-hero {
+	text-align:center;
+	width: 1320px;
+	margin-bottom: 100px;
+	margin-top: 68px;
+}
+
+.Group-hero .hero {
+	display: none;
+	
+}
+
+.Group-hero .hero.is-active { 
+text-align: center;
+display: block;
+	
+} 
+
+.Group-hero .hero.is-active  .image {
+	width: 280px;
+	height: 352px;	
+	display:inline-block;
+}
+
+
+
+
+.Group-hero .avatar{
+	width: 196px;
+	height: 186px;
+	position: relative;
+	margin: 0 auto;
+	top:24px;
+}
+.Group-hero .parent {
+display: none;
+position: absolute;
+bottom:0px;
+left: 0px;
+margin: 0px;
+width: 68px;
+height: 73px;
+}
+
+.Group-hero .parent img{
+	width: 68px;
+	height: 71px;	
+}
+
+.Group-hero .parent p{
+	position: absolute;
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-weight: normal;
+   font-size:29px;
+   
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+.Group-hero .image {
+	text-align: center;
+}
+
+.Group-hero .image img{
+	width: 166px;
+	height: 166px;
+	margin: 0 auto;
+}
+
+.Group-hero .name {
+	margin-top: 31px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+
+.Group-hero h1 {
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-weight: normal;
+   font-size:32px;
+   text-align: center;
+   margin:0px;
+}
+
+.Group-hero .post p {
+	display: none;
+	background: linear-gradient(180deg, rgba(255,210,141,1) 47%, rgba(53,32,0,1) 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   color: #ffd28d;
+   font-family: 'Crimson Text', serif; 
+   font-weight: normal;
+   font-size:17px;
+   text-align: center;
+   margin:0px;
+}
+
+
+
+
