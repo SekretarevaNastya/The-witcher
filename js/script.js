@@ -16,12 +16,12 @@ let tab = function () {
         heroName = this.getAttribute('data-hero-name');
         
         
-			selectHeroContent(heroName);
+			selectNeroContent(heroName);
 			
            
     }
 
-    function selectHeroContent(heroName) {
+    function selectNeroContent(heroName) {
         heroContent.forEach(item => {
             item.classList.contains(heroName) ? item.classList.add('is-active') : item.classList.remove('is-active');
         })
@@ -32,26 +32,7 @@ let tab = function () {
 
 tab();
 
-/*hero.onclick = function () {
-  slider.document.images["myImage"] = slider.document.images["myImage"] + hero.document.images["myImage"];
-  }*/
-  
-let hero = document.querySelector('.hero');
-let logo = document.querySelector('.logo');
-let slider = document.querySelector('.slider');
-let Back = document.querySelector('.Back');
-let logo1 = document.querySelector('.logo1');
-let line = document.querySelector('.line');
 
-
-
-onclick = function(hero) {
-    logo.style.display = 'none';
-    slider.style.display = 'block';
-	Back.style.display = 'block';
-	logo1.style.display = 'block';
-	line.style.display = 'block';
-};
 
 
 
