@@ -49,7 +49,7 @@ header {
 
 
 .logo {
-	display:none;
+	/*display:none;*/
 	width: 380px;
 	height: 345px;
 	margin: 0 auto;
@@ -58,7 +58,7 @@ header {
 
 /*слайдер */
 .slider{
-	/*display: none;*/
+	display: none;
     width: 572px;
     position: relative;
     height: auto;
@@ -243,24 +243,11 @@ height: 71px;
 }
 
 .Group-hero .hero {
-	display: none;
-	
-}
-
-.Group-hero .hero.is-active { 
-text-align: center;
-display: block;
-	
-} 
-
-.Group-hero .hero.is-active  .image {
 	width: 280px;
 	height: 352px;	
 	display:inline-block;
+	
 }
-
-
-
 
 .Group-hero .avatar{
 	width: 196px;
