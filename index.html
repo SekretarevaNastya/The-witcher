@@ -1,111 +1,65 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-     <title>sekretareva_nastya</title>
-	 <link type="text/css" rel="stylesheet" href="css/style.css">
-	 
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/media.css">
+    <title>The witcher</title>
 </head>
+
 <body>
-	<header class="page">
-	
-	<div class="Back"><a href="#" onclick="history.back();return false;">Back</a></div>
-	<div class="logo1"><a href="index.html"><img src="img/logo.png"></a></div> 
-		<div class="logo"><img id='myImage' src="img/logo.png"></div> 
-	</header>			
-		
-		<div class="main">	
-		<div class="slider">
-					
-			<div class="item hero-slider Nilfgaard" id="1">
-				<div class="avatar">
-				    <div class="image"><img src="img/nilfgaard.jpg" alt=""> </div>
-					<div class="parent"> <img src="img/icon.png"><p>135</p> </div>
-				</div>
-				
-				<div class="slideText name"><h1>Nilfgaard</h1></div>
-				<div class="post"><p>Magne Division</p></div>	
-			</div>
-			
-			<div class="item hero-slider Redania" id="2">
-				<div class="avatar">
-				    <div class="image"><img src="img/redania.jpg" alt=""> </div>
-					<div class="parent"> <img src="img/icon.png"><p>135</p> </div>
-				</div>
-				
-				<div class="slideText name"><h1>Redania</h1></div>
-				<div class="post"><p>Magne Division</p></div>	
-			</div>
-			
-			<div class="item hero-slider Skellige" id="3">
-				<div class="avatar">
-				    <div class="image"><img src="img/skellige.jpg" alt=""> </div>
-					<div class="parent"> <img src="img/icon.png"><p>135</p> </div>
-				</div>
-				
-				<div class="slideText name"><h1>Skellige</h1></div>
-				<div class="post"><p>Magne Division</p></div>	
-			</div>
-
-				<a class="prev" onclick="minusSlide()"><img src="img/prv.png" alt="вперед"></a>
-				<a class="next" onclick="plusSlide()"><img src="img/nxt.png" alt="назад"></a>
-		</div>
-	
-	
-	
-	
-		<div class="line"><img src="img/timeline1.png"></div> <!-- линия -->
-		
-		<!-- подчиненные -->
-		<div class="Group-hero"> 
-			<div class="hero Nilfgaard" id="1">
-				
-				<div class="avatar">
-				    <div class="image"><img src="img/nilfgaard.jpg" alt=""> </div>
-					<div class="parent"> <img src="img/icon.png"><p>135</p> </div>
-				</div>
-				
-				<div class="name"><h1>Nilfgaard</h1></div>
-				<div class="post"><p>Magne Division</p></div>
-				
-			</div>
-			
-			<div class="hero Redania" id="2">
-				
-				<div class="avatar">
-				    <div class="image"><img src="img/redania.jpg" alt=""> </div>
-					<div class="parent"> <img src="img/icon.png"><p>135</p> </div>
-				</div>
-				
-				<div class="name"><h1>Redania</h1></div>
-				<div class="post"><p>Magne Division</p></div>
-	
-			</div>
-			
-			<div class="hero Skellige" id="3">
-				
-				<div class="avatar">
-				    <div class="image"><img src="img/skellige.jpg" alt=""> </div>
-					<div class="parent"> <img src="img/icon.png"><p>135</p> </div>
-				</div>
-				
-				<div class="name"><h1>Skellige</h1></div>
-				<div class="post"><p>Magne Division</p></div>
-	
-			</div>
-			
-		</div>
-		
-		
-	</div>
-
-
-	<script src="js/script.js"></script>
-	<script src="js/slider.js"></script>
+    <nav class="navigation" style='display:none'>
+        <div class="navigation__back"> <a href="#" class="navigation__btn paragraph">Back</a> </div>
+        <div class="navigation__logo">  <a class="navigation__logo-btn" href="#"> <img class="navigation__img" src="img/logo.png" alt="Логотип"> </a> </div>
+    </nav>
+    <div class="logo active">
+        <div class="logo__wrapper"> <img class="logo__image" src="img/logo.png" alt="Логотип"> </div>
+    </div>
+    <div class="slider">
+        <div class="container">
+            <div class="row slider__row">
+                <a href="#" class="btn prev"><img class="btn__arrow" src="img/arrow.png" alt=""></a>
+                <div class="slider__wrapper"> </div>
+                <a href="#" class="btn next"><img class="btn__arrow btn__arrow_rotate" src="img/arrow.png" alt=""></a>
+               
+            </div>
+        </div>
+        <div class="slider__line">
+            <picture>
+                <source srcset="img/timeline2.png" media="(max-width: 320px)"> <img class="slider__line-img"
+                    src="img/timeline1.png" alt="timeline"> </picture>
+        </div>
+    </div>
+    <div class="heroes">
+        <div class="container">
+            <div class="row">
+                <div class="heroes__wrapper">
+                    <div id="1" class="hero Nilfgaard">
+                        <div class="hero__avatar"> <img src="img/nilfgaard.jpg" alt="страна" class="hero__img">
+                            <div class="hero__name"></div>
+                        </div>
+                        <p class="paragraph">Nilfgaard</p>
+                    </div>
+                    <div id="2" class="hero Redania">
+                        <div class="hero__avatar"> <img src="img/redania.jpg" alt="страна" class="hero__img">
+                            <div class="hero__name"></div>
+                        </div>
+                        <p class="paragraph">Redania</p>
+                    </div>
+                    <div id="3" class="hero Skellige">
+                        <div class="hero__avatar"> <img src="img/skellige.jpg" alt="страна" class="hero__img">
+                            <div class="hero__name"></div>
+                        </div>
+                        <p class="paragraph">Skellige</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/input.js"></script>
 </body>
-
 
 
 </html>
